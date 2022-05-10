@@ -6,7 +6,7 @@ def is_leap(x):
 		return True    #回傳True
 	elif x % 400 != 0 :  # X能被100整除X不能被400整除
 		return False   #回傳False
-	elif x % 3200 != : # X能被400整除X不能被3200整除
+	elif x % 3200 != 0 : # X能被400整除X不能被3200整除
 		return True    #回傳True
 
 #TypeError: not all arguments converted during string formatting
