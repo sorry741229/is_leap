@@ -1,12 +1,12 @@
 #function 定義
 def is_leap(x):
-	if x % 4 > 0 : # X不能被4整除
+	if x % 4 != 0 : # X不能被4整除
 		return False   #回傳False
-	elif x % 4 == 0 and x % 100 > 0:    # X能被4整除X不能被100整除
+	elif x % 100 != 0 :    # X能被4整除X不能被100整除
 		return True    #回傳True
-	elif x % 100 == 0 and x % 400 > 0:  # X能被100整除X不能被400整除
+	elif x % 400 != 0 :  # X能被100整除X不能被400整除
 		return False   #回傳False
-	elif x % 400 == 0 and x % 3200 > 0: # X能被400整除X不能被3200整除
+	elif x % 3200 != : # X能被400整除X不能被3200整除
 		return True    #回傳True
 
 #TypeError: not all arguments converted during string formatting
